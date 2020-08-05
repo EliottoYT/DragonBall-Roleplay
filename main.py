@@ -120,6 +120,9 @@ async def ssj3(ctx):
 async def ssj4(ctx):
     gif = rnd.choice(links['ssj4'])
     await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssj4!!'.format(ctx), url=gif, color=plata)
+"""
+<---PROXIMAMENTE SSJ5--->
+"""
 @bot.command(name='ssjl')
 async def ssjl(ctx):
     gif = rnd.choice(links['ssjl'])
