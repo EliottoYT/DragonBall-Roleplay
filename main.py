@@ -63,44 +63,44 @@ async def on_ready():
     print('Prefijo: '+datos['prefijo'])
     for listaLnks in datos['links']:
         print('{0}: '.format(listaLnks))
-        if listaLnks == ssj:
-            for i in ssj:
+        if listaLnks == links['ssj']:
+            for i in links['ssj']:
                 print('-'+i)
-        elif listaLnks == ssj2:
-            for i in ssj2:
+        elif listaLnks == links['ssj2']:
+            for i in links['ssj2']:
                 print('-'+i)
-        elif listaLnks == ssj3:
-            for i in ssj3:
+        elif listaLnks == links['ssj3']:
+            for i in links['ssj3']:
                 print('-'+i)
-        elif listaLnks == ssj4:
-            for i in ssj4:
+        elif listaLnks == links['ssj4']:
+            for i in links['ssj4']:
                 print('-'+i)
-        elif listaLnks == ssjl:
-            for i in ssjl:
+        elif listaLnks == links['ssjl']:
+            for i in links['ssjl']:
                 print('-'+i)
-        elif listaLnks == ssg:
-            for i in ssg:
+        elif listaLnks == links['ssg']:
+            for i in links['ssg']:
                 print('-'+i)
-        elif listaLnks == ssgss:
-            for i in ssgss:
+        elif listaLnks == links['ssgss']:
+            for i in links['ssgss']:
                 print('-'+i)
-        elif listaLnks == ssgsse:
-            for i in ssgsse:
+        elif listaLnks == links['ssgsse']:
+            for i in links['ssgsse']:
                 print('-'+i)
-        elif listaLnks == ssgsskk:
-            for i in ssgsskk:
+        elif listaLnks == links['ssgsskk']:
+            for i in links['ssgsskk']:
                 print('-'+i)
-        elif listaLnks == ssrose:
-            for i in ssrose:
+        elif listaLnks == links['ssrose']:
+            for i in links['ssrose']:
                 print('-'+i)
-        elif listaLnks == mng:
-            for i in mng:
+        elif listaLnks == links['mng']:
+            for i in links['mng']:
                 print('-'+i)
-        elif listaLnks == ozaru:
-            for i in ozaru:
+        elif listaLnks == links['ozaru']:
+            for i in links['ozaru']:
                 print('-'+i)
-        elif listaLnks == gozaru:
-            for i in gozaru:
+        elif listaLnks == links['gozaru']:
+            for i in links['gozaru']:
                 print('-'+i)
 
 #Comandos
@@ -119,10 +119,7 @@ async def ssj3(ctx):
 @bot.command(name='ssj4')
 async def ssj4(ctx):
     gif = rnd.choice(links['ssj4'])
-    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssj4!!'.format(ctx), url=gif, color=plata)
-"""
-<---PROXIMAMENTE SSJ5--->
-"""
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssj4!!'.format(ctx), url=gif, color=rojo)
 @bot.command(name='ssjl')
 async def ssjl(ctx):
     gif = rnd.choice(links['ssjl'])
@@ -130,7 +127,28 @@ async def ssjl(ctx):
 @bot.command(name='ssg')
 async def ssg(ctx):
     gif = rnd.choice(links['ssg'])
-    await gifs(ctx=ctx, tt='')
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssg!!'.format(ctx), url=gif, color=rojo)
+@bot.command(name='ssgss')
+async def ssgss(ctx):
+    gif = rnd.choice(links['ssgss'])
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssgss!!'.format(ctx), url=gif, color=azul)
+@bot.command(name='ssgsse')
+async def ssgsse(ctx):
+    gif = rnd.choice(links['ssgsse'])
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssgsse!!'.format(ctx), url=gif, color=azul)
+@bot.command(name='ssgsskk')
+async def ssgsskk(ctx):
+    gif = rnd.choice(links['ssgsskk'])
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssgsskk!!'.format(ctx), url=gif, color=azul)
+@bot.command(name='ssrose')
+async def ssrose(ctx):
+    gif = rnd.choice(links['ssrose'])
+    await gifs(ctx=ctx, tt='**{0.author.name}** se ha transformado en ssrose!!'.format(ctx), url=gif, color=rosa)
+@bot.command(name='mng')
+async def mng(ctx):
+    gif = rnd.choice(links['mng'])
+    await gifs(ctx=ctx, tt='**{0.author.name}** ha conseguido el migatte no gokui!!'.format(ctx), url=gif, color=plata)
+
 
 @bot.command(name='creator')
 async def creator(ctx):
